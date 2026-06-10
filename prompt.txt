@@ -1,0 +1,29 @@
+Create a terminal-based 2D Graphics Editor in C using the ncurses library. The application should provide an interactive ASCII drawing canvas with a menu-driven interface and support multiple graphics operations.
+
+Requirements:
+
+* Create a drawing canvas of fixed size (20x40).
+* Allow drawing of:
+    * Points
+    * Lines using Bresenham’s Line Algorithm
+    * Circles using the Midpoint Circle Algorithm
+    * Ellipses using the Midpoint Ellipse Algorithm
+    * Rectangles
+    * Filled Rectangles
+    * Filled Circles
+    * Polygons with up to 8 vertices
+* Implement Flood Fill (Boundary Fill) for enclosed regions.
+* Provide a Freehand Drawing mode using arrow keys for cursor movement and a key to draw.
+* Support Undo and Redo operations with storage of previous canvas states.
+* Allow users to change the drawing character dynamically.
+* Implement Save and Load functionality using text files.
+* Provide options to clear the canvas and display the current canvas.
+* Use ncurses functions for screen handling, keyboard input, menus, and interactive navigation.
+* Maintain modular code structure with separate functions for drawing primitives, file operations, flood fill, undo/redo, and user interaction.
+* Include proper boundary checking and input validation.
+* The program should run entirely in the terminal and demonstrate fundamental computer graphics concepts using ASCII-based rendering.
+
+Compile using:
+gcc graphics_editor.c -o graphics_editor -lncurses -lm
+
+The final project should be suitable as a college mini project demonstrating computer graphics algorithms and interactive terminal-based drawing.
